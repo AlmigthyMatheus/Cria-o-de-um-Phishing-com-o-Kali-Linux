@@ -1,3 +1,4 @@
+```markdown
 🚨 **Criação de Phishing com o Kali Linux e SEToolkit** 🚨
 
 Bem-vindo ao repositório Criação de Phishing com SEToolkit! 🎯 Neste guia, vamos mostrar como criar um ataque de phishing utilizando o SEToolkit no Kali Linux. O SEToolkit é uma poderosa ferramenta de engenharia social, usada para testar vulnerabilidades de segurança.
@@ -19,53 +20,63 @@ sudo apt update
 sudo apt install set
 ```
 
-🚀 Iniciando o SEToolkit
+🚀 **Iniciando o SEToolkit**
 
 Para iniciar o SEToolkit, execute o seguinte comando no terminal:
 
+```bash
 sudo setoolkit
+```
 
 Isso abrirá o menu principal do SEToolkit, onde você pode escolher várias opções para realizar ataques de engenharia social.
 
-🌐 Criando um Ataque de Phishing
+🌐 **Criando um Ataque de Phishing**
 
-    Selecione Social-Engineering Attacks
-    Escolha Website Attack Vectors
-    Selecione o Credential Harvester Attack Method
-    Configure o URL do site de phishing que você deseja simular. O SEToolkit criará automaticamente uma cópia do site e começará a capturar as credenciais enviadas.
+- Selecione *Social-Engineering Attacks*
+- Escolha *Website Attack Vectors*
+- Selecione o *Credential Harvester Attack Method*  
+- Configure o URL do site de phishing que você deseja simular. O SEToolkit criará automaticamente uma cópia do site e começará a capturar as credenciais enviadas.
 
 <br>
-Tela de Login	Terminal com envio de email e senha
-<img src="imagens/login.png" alt="Tela de Login" width="1000"/>	<img src="imagens/terminal.png" alt="Terminal com envio de email e senha" width="1000"/>
-<br>
 
-⚠️ Como Resolver o Erro Comum: AttributeError: module 'cgi' has no attribute 'escape'
+⚠️ **Como Resolver o Erro Comum: AttributeError: module 'cgi' has no attribute 'escape'**
 
 Esse erro ocorre devido à remoção do método cgi.escape() nas versões mais recentes do Python (3.2+). Vamos corrigir isso! 💡
 
-🛠️ Solução para Kali Linux
+🛠️ **Solução para Kali Linux**
 
-Abra o arquivo harvester.py para edição:
+Abra o arquivo `harvester.py` para edição:
 
+```bash
 sudo nano /usr/share/set/src/webattack/harvester/harvester.py
+```
 
-Localize a linha que utiliza cgi.escape():
+Localize a linha que utiliza `cgi.escape()`:
 
+```python
 filewrite.write(cgi.escape("PARAM: " + line + "\n"))
+```
 
-Substitua cgi.escape() por html.escape(), que é compatível com versões mais recentes do Python:
+Substitua `cgi.escape()` por `html.escape()`, que é compatível com versões mais recentes do Python:
 
+```python
 import html
 filewrite.write(html.escape("PARAM: " + line + "\n"))
+```
 
-Salve o arquivo. Se estiver usando o editor nano, pressione CTRL + O para salvar e depois CTRL + X para sair.
+Salve o arquivo. Se estiver usando o editor `nano`, pressione `CTRL + O` para salvar e depois `CTRL + X` para sair.
 
 Reinicie o SEToolkit:
 
+```bash
 sudo setoolkit
+```
 
 Agora, o erro deve ser corrigido e o SEToolkit funcionará corretamente. 🙌
 
-✅ Conclusão
+✅ **Conclusão**
 
 Parabéns! Agora você sabe como criar um ataque de phishing utilizando o SEToolkit no Kali Linux! 🎉
+```
+
+Agora os blocos de código estão devidamente fechados. O comando `bash` está correto em cada bloco de código para garantir que os comandos sejam destacados da maneira apropriada.
