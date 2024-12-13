@@ -39,9 +39,15 @@ Isso abrirá o menu principal do SEToolkit, onde você pode escolher várias op�
 
 <br>
 
+#### Tela de Login | Terminal com envio de email e senha
+
+| **Tela de Login** | **Terminal com envio de email e senha** |
+|-------------------|----------------------------------------|
+| ![Tela de Login](imagens/login.png) | ![Terminal com envio de email e senha](imagens/terminal.png) |
+
 ⚠️ **Como Resolver o Erro Comum: AttributeError: module 'cgi' has no attribute 'escape'**
 
-Esse erro ocorre devido à remoção do método cgi.escape() nas versões mais recentes do Python (3.2+). Vamos corrigir isso! 💡
+Esse erro ocorre devido à remoção do método `cgi.escape()` nas versões mais recentes do Python (3.2+). Vamos corrigir isso! 💡
 
 🛠️ **Solução para Kali Linux**
 
