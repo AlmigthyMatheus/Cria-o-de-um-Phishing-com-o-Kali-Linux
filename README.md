@@ -79,9 +79,9 @@ Isso deve corrigir o erro e permitir que o SEToolkit funcione corretamente.
 
 Aqui estão algumas imagens ilustrativas para ajudá-lo a visualizar o processo:
 
-![Tela de Login](./login.xcf)
+![Tela de Login](imagens/login.png)
 
-![Terminal com envio de email e senha](./terminal.xcf)
+![Terminal com envio de email e senha](imagens/terminal.png)
 
 ✅ Conclusão
 
