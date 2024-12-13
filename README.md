@@ -1,59 +1,54 @@
-# 🚨 **Criação de Phishing com o Kali Linux e SEToolkit** 🚨
+🚨 Criação de Phishing com o Kali Linux e SEToolkit 🚨
 
-Bem-vindo ao repositório de **Criação de Phishing com SEToolkit**! 🎯 Neste guia, mostramos como criar um ataque de phishing utilizando o **SEToolkit** em **Kali Linux** e **Arch Linux**. O SEToolkit é uma poderosa ferramenta de engenharia social, usada para testar vulnerabilidades de segurança.
-
----
-
-## 🔧 **Requisitos**
+Bem-vindo ao repositório Criação de Phishing com SEToolkit! 🎯
+Neste guia, vamos mostrar como criar um ataque de phishing utilizando o SEToolkit no Kali Linux. O SEToolkit é uma poderosa ferramenta de engenharia social, usada para testar vulnerabilidades de segurança.
+🔧 Requisitos
 
 Antes de começar, certifique-se de ter o seguinte:
 
-- **Kali Linux** ou **Arch Linux** 🐧
-- **Python 3.x** (instalado) 🐍
-- Conhecimento básico em **Segurança Cibernética** 🛡️
+    Kali Linux 🐧
+    Python 3.x (instalado) 🐍
+    Conhecimento básico em Segurança Cibernética 🛡️
 
----
-
-## 📥 **Instalação do SEToolkit**
-
-### 🐧 **No Kali Linux**
+📥 Instalação do SEToolkit
 
 O SEToolkit já vem pré-instalado no Kali Linux. Caso não esteja instalado, basta executar o seguinte comando:
 
-```bash
 sudo apt update
 sudo apt install set
-```
 
-🖥️ No Arch Linux
-
-No Arch Linux, você pode instalar o SEToolkit a partir do AUR (Arch User Repository). Use o seguinte comando:
-
-yay -S setoolkit
-
-Se você não tiver o yay, instale-o ou use o método de compilação manual para instalar o SEToolkit.
 🚀 Iniciando o SEToolkit
 
-    Para iniciar o SEToolkit, digite o seguinte comando no terminal:
+Para iniciar o SEToolkit, execute o seguinte comando no terminal:
 
 sudo setoolkit
 
-    Isso abrirá o menu principal do SEToolkit, onde você pode escolher várias opções para realizar ataques de engenharia social.
-
+Isso abrirá o menu principal do SEToolkit, onde você pode escolher várias opções para realizar ataques de engenharia social.
 🌐 Criando um Ataque de Phishing
+1. Selecione Social-Engineering Attacks
 
-Siga as etapas abaixo para criar seu ataque de phishing:
+No menu inicial do SEToolkit, selecione Social-Engineering Attacks.
 
-    Selecione Social-Engineering Attacks.
-    Escolha Website Attack Vectors.
-    Selecione o Credential Harvester Attack Method – este método captura credenciais enviadas a um site falso.
-    Configure o URL do site de phishing que você deseja simular.
-    O SEToolkit criará automaticamente uma cópia do site e começará a capturar as credenciais enviadas.
+Social-Engineering Attacks
+2. Escolha Website Attack Vectors
+
+Em seguida, escolha Website Attack Vectors.
+3. Selecione o Credential Harvester Attack Method
+
+Escolha Credential Harvester Attack Method – esse método captura credenciais enviadas a um site falso.
+
+Credential Harvester
+4. Configure o URL do site de phishing
+
+Agora, configure o URL do site de phishing que você deseja simular. O SEToolkit criará automaticamente uma cópia do site e começará a capturar as credenciais enviadas.
+
+![Tela de Login](imagens/login.png)
+![Terminal com envio de email e senha](imagens/terminal.png)
 
 ⚠️ Como Resolver o Erro Comum: AttributeError: module 'cgi' has no attribute 'escape'
 
 Esse erro ocorre devido à remoção do método cgi.escape() nas versões mais recentes do Python (3.2+). Vamos corrigir isso! 💡
-🛠️ Solução para Kali Linux e Arch Linux
+🛠️ Solução para Kali Linux
 
     Abra o arquivo harvester.py para edição:
 
@@ -74,17 +69,7 @@ filewrite.write(html.escape("PARAM: " + line + "\n"))
 
 sudo setoolkit
 
-Isso deve corrigir o erro e permitir que o SEToolkit funcione corretamente.
-🖼️ Imagens
-
-Aqui estão algumas imagens ilustrativas para ajudá-lo a visualizar o processo:
-
-![Tela de Login](imagens/login.png)
-
-![Terminal com envio de email e senha](imagens/terminal.png)
-
+Agora, o erro deve ser corrigido e o SEToolkit funcionará corretamente. 🙌
 ✅ Conclusão
 
-Parabéns! Agora você sabe como criar um ataque de phishing utilizando o SEToolkit tanto no Kali Linux quanto no Arch Linux! 🎉
-
-Se você encontrou o erro relacionado ao cgi.escape(), agora sabe como corrigi-lo. 🙌
+Parabéns! Agora você sabe como criar um ataque de phishing utilizando o SEToolkit no Kali Linux! 🎉
