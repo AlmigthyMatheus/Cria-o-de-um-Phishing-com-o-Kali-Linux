@@ -79,7 +79,7 @@ Isso deve corrigir o erro e permitir que o SEToolkit funcione corretamente.
 
 Aqui estão algumas imagens ilustrativas para ajudá-lo a visualizar o processo:
 
-    Tela de Login do SEToolkit:
+    Tela de Login do SEToolkit: 
 
     Terminal mostrando o envio de email e senha:
 
