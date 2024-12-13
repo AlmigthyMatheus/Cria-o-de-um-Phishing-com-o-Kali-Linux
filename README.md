@@ -83,4 +83,3 @@ Agora, o erro deve ser corrigido e o SEToolkit funcionará corretamente. 🙌
 ✅ **Conclusão**
 
 Parabéns! Agora você sabe como criar um ataque de phishing utilizando o SEToolkit no Kali Linux! 🎉
-```
