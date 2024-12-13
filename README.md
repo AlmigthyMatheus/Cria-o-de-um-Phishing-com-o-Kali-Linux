@@ -17,7 +17,7 @@ No Kali Linux, o SEToolkit já vem pré-instalado. Caso não esteja instalado, b
 ```bash
 sudo apt update
 sudo apt install set
-
+```
 🖥️ Arch Linux
 
 No Arch Linux, o SEToolkit pode ser instalado a partir do AUR (Arch User Repository). Use o seguinte comando para instalar:
