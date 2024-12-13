@@ -44,7 +44,8 @@ Agora, configure o URL do site de phishing que você deseja simular. O SEToolkit
 
 | Tela de Login | Terminal com envio de email e senha |
 |---------------|-------------------------------------|
-| ![Tela de Login](imagens/login.png) | ![Terminal com envio de email e senha](imagens/terminal.png) |
+| <img src="imagens/login.png" alt="Tela de Login" width="600"/> | <img src="imagens/terminal.png" alt="Terminal com envio de email e senha" width="600"/> |
+
 
 
 ⚠️ Como Resolver o Erro Comum: AttributeError: module 'cgi' has no attribute 'escape'
