@@ -42,8 +42,10 @@ Credential Harvester
 
 Agora, configure o URL do site de phishing que você deseja simular. O SEToolkit criará automaticamente uma cópia do site e começará a capturar as credenciais enviadas.
 
-![Tela de Login](imagens/login.png)
-![Terminal com envio de email e senha](imagens/terminal.png)
+| Tela de Login | Terminal com envio de email e senha |
+|---------------|-------------------------------------|
+| ![Tela de Login](imagens/login.png) | ![Terminal com envio de email e senha](imagens/terminal.png) |
+
 
 ⚠️ Como Resolver o Erro Comum: AttributeError: module 'cgi' has no attribute 'escape'
 
