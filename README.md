@@ -78,5 +78,3 @@ Agora, o erro deve ser corrigido e o SEToolkit funcionará corretamente. 🙌
 
 Parabéns! Agora você sabe como criar um ataque de phishing utilizando o SEToolkit no Kali Linux! 🎉
 ```
-
-Agora os blocos de código estão devidamente fechados. O comando `bash` está correto em cada bloco de código para garantir que os comandos sejam destacados da maneira apropriada.
