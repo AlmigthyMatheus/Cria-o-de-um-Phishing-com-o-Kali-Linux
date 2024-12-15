@@ -1,8 +1,10 @@
 ```markdown
 🚨 **Criação de Phishing com o Kali Linux e SEToolkit** 🚨
 
-Bem-vindo ao repositório Criação de Phishing com SEToolkit! 🎯 Neste guia, vamos mostrar como criar um ataque de phishing
-utilizando o SEToolkit no Kali Linux. O SEToolkit é uma poderosa ferramenta de engenharia social, usada para testar vulnerabilidades de segurança.
+Bem-vindo ao repositório Criação de Phishing com SEToolkit! 🎯
+Neste guia, vamos mostrar como criar um ataque de phishing
+utilizando o SEToolkit no Kali Linux.
+O SEToolkit é uma poderosa ferramenta de engenharia social, usada para testar vulnerabilidades de segurança.
 
 🔧 **Requisitos**
 
